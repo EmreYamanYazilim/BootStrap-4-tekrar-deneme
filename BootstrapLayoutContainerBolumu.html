@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM LAYOUT CONTAİNER</title>
+<!--    bunun için bootsrapın getStarted'teki temel referansını eklememiz yeterli-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!--.container yazarak taba basarsak puling eklediğimiz için otomatik olarark bir div içine container clası oluşturur-->
+
+<!--içine div ekleyerek içine class olarak container oluşuturup içine row ekliyoruz
+container içine row,  row  içinede  col(kolonlar yan yana gelir )  olacak şekilde  sayfa içine yan yana kolonlar koyabilirz
+ sayfayı daha 1 div içine  2 row koyarsak  alt alta yazar row içine kolunal col lar ise yan yana yazdırır
+  aşağıdaki örnekteki gibi  sayfada 12 parça vardır  col ile  sayfayı 12 parçaya bölebilirsin
+  -->
+<div class="jumbotron text-center">
+    <h1>jumbotrom  </h1>
+    <p>containerin başlangıcından alarak yazar </p>
+    <p>eğer biz bunu 2. bir div içine alsaydık  div içine div olsaydı</p>
+    <p>2. divin başladığı yerden başlayarak alırdı </p>
+    <p>cantainer üstüne yazdığımız zaman navbar gibi düzen oluyor </p>
+</div>
+<div class="container">
+
+<!--col yanına  col-md-2 yazarsak 12 parça olan yerde 2 parçayı kullan anlamına gelir
+bir row içinde 12 parça olduğundan dolayı  row içine koyduğumuz col'ların yanına sayfayı
+istediğimiz şekilde bölmek için toplamda 12 olacak şekilde parçayabilriz alttaki gibi -->
+    <div class="row">
+        <div class="col-md-2"><h2>Kolon 1</h2>
+        <p>1. satır</p>
+        <p>2. satır deneme deneme deneme deneme deneme</p>
+        </div>
+        <div class="col-md-5">
+            <h2>Kolon 2</h2>
+            <p>1. satır</p>
+            <p>2. satır deneme deneme deneme deneme deneme</p>
+        </div>
+        <div class="col-md-5">
+            <h2>Kolon 3</h2>
+            <p>1. satır</p>
+            <p>2. satır deneme deneme deneme deneme deneme</p>
+        </div>
+
+    </div>
+    <br><br><br><br>
+
+    <div class="row">1 div içindeki 2. ROW alta atar</div>
+</div>
+
+<!--fluid tüm sayfayı kullanır sayfanın en soluna yapıştırarak  en baştan başlatır-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">Kolon 1</div>
+        <div class="col">Kolon 2</div>
+        <div class="col">Kolon 3</div>
+    </div>
+    <div class="row">1 div içindeki 2. ROW alta atar</div>
+</div>
+
+
+
+</body>
+</html>

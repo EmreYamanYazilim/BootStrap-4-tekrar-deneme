@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    bunun için bootsrapın getStarted'teki temel referansını eklememiz yeterli-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Title</title>
+</head>
+<body>
+<!-- 1 table içine class table yazarak alttaki tabloyu bootstrap ile güzel hale getirir
+2  başka bir classta eklemek için boşluk bırakarak  tablo içinde değişiklikler yapabilirsin
+table-striped  tek gri çift beyaz şekilde  tabloyu boyadı
+3 table-bordered : yazdığında  tablo arlarına ve etrafına çizgiler sınırlar koyar
+4 table-hover    :ekleyerek üstüne geldiğinin rengi değişir
+
+-->
+
+<div>
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>Ürün Adı</td>
+        <td>Kategori</td>
+        <td>Fiyatı</td>
+        <td>Stok Adedi</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>laptop</td>
+        <td>Bilgisayar</td>
+        <td>23000</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>laptop</td>
+        <td>Bilgisayar</td>
+        <td>23000</td>
+        <td>3</td>
+    </tr>
+    </tbody>
+<!--
+  table  yazarak table oluşlturduk
+  table , tr , td hepsine  class ile renk verebiliriz yada diğer clasları ekleyebiliriz
+  table-dark,success,danger,info,warning,primary,secondary yazarak tablolara  renk verebeilirsin
+
+  -->
+
+</table>
+    <table class="table table-light table-hover">
+        <thead>
+        <tr class="table-info">
+            <td>Id</td>
+            <td>Ürün Adı</td>
+            <td>Kategori</td>
+            <td>Fiyatı</td>
+            <td>Stok Adedi</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table-secondary">
+            <td>1</td>
+            <td>laptop</td>
+            <td>Bilgisayar</td>
+            <td>23000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="table-success">laptop</td>
+            <td class="table-danger">Bilgisayar</td>
+            <td class="table-primary">23000</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>laptop</td>
+            <td>Bilgisayar</td>
+            <td>23000</td>
+            <td>3</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>

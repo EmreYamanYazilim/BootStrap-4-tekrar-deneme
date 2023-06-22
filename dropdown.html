@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    bunun için bootsrapın getStarted'teki temel referansını eklememiz yeterli-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Açılır PENCERE</title>
+</head>
+<body>
+
+<!--
+açılır pencere için  div içine dropdown verdik
+içine button ekledik  type belirttik
+btn : bootstrap buton clas içine  görüntüsü verebilmek için btn ekledik
+btn-success             :  ile yeşil renk verdik
+dropdown-toggle         : yazarak açılır pencere olması için classımızı ekledik yanına ok işareti eklendi
+data-toggle="dropdown"  :bunu açılır hale getirmek için bir attirebutte kullanmamız lazım
+class dışına data-toggle içinede dropdown yazarak açılır pencere haline getireceğiz ama  bunun için
+içine en alta  java script lerimizi eklememiz lazım
+button altına  div açarak içine class="dropdown-menu" ekliyoruz
+div içine a açarak  içine class="dropdown-item"  ekledik
+açılır pencere butonumuz bitti
+aralarına çizgi koymak için
+<div class="dropdown-divider"></div> diye bir div oluşturduk
+üstüne silik güzel bir başlık atmak istersek dropdown menu içine üste
+bir div atarak  class içine dropdown-header koyuyoruz
+active disabled    :  dropdown içine active yazarsak orası secili renkli şekilde gösterir
+eğer disabled yazarsak orası seçilmez hale getirir
+dropright       :  menuyu sağadan alta doğru açmaya yarar leftte sola doğru açıp aşağı doğru açar dropup yukarı doğru açar
+btn-group       :  div içine yazarak buttonları bitişik şekilde yazıyoruz
+
+
+-->
+
+<div class="dropdown dropright">
+    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Menü</button>
+    <div class="dropdown-menu">
+        <div class="dropdown-header">Sepet elemanları</div>
+        <a class="dropdown-item active" href="">birinci bölüm </a>
+        <a class="dropdown-item disabled" href="">2. bölüm</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="" >Satın Al</a>
+
+    </div>
+</div>
+<br><br><br>
+
+<div class="btn-group">
+    <button type="button" class="btn btn-success">SEPET</button>
+    <button type="button" class="btn btn-success dropdown-toggle dropdown-split" data-toggle="dropdown"></button>
+    <div class="dropdown-menu">
+        <div class="dropdown-header">Sepet elemanları</div>
+        <a class="dropdown-item active" href="">birinci bölüm </a>
+        <a class="dropdown-item disabled" href="">2. bölüm</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="" >Satın Al</a>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+</body>
+</html>
